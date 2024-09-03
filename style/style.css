@@ -43,7 +43,7 @@ nav ul {
 /* hero styles  */
 
 .hero-container{
-    background-image: url('/images/shapes.png');
+    background-image: url('./images/shapes.png');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,6 +53,7 @@ nav ul {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 50px;
 }
 /* how it works style */
@@ -135,7 +136,7 @@ nav ul {
 .customer-container{
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 150px;
     overflow-x: hidden;
 }
 .review-area{
@@ -148,7 +149,7 @@ nav ul {
 /* footer */
 
 .background-image{
-    background-image: url('/images/bg-image.png');
+    background-image: url('./images/bg-image.png');
     height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
