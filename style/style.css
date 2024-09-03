@@ -82,6 +82,7 @@ nav ul {
     justify-content: space-around;
     margin-bottom: 50px;
 }
+
 .img-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -90,6 +91,7 @@ nav ul {
 .images{
     background-color: #f1f1f1;
     text-align: center;
+    height: 230px;
     padding: 30px;
     border-radius: 15px 15px 0 0;
 }
@@ -156,9 +158,150 @@ nav ul {
 }
 
 .footer-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 50px;
     padding: 100px 140px;
     padding-bottom: 50px;
+}
+
+/* responsive with media query */
+
+@media screen and (max-width: 1024px){
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #fff9ea;
+        height: 108px;
+        align-items: center;
+        padding: 0px 140px;
+    }
+    /* hero section */
+    .hero-container{
+        padding: 12px 10px;
+    }
+    /* what we do section */
+
+    .what-we-serve{
+        margin: 0 50px;
+        text-align: center;
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    /* menu section */
+
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    /* review section */
+
+    .customer-container{
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+        overflow-x: hidden;
+    }
+    /* footer section */
+    .footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 140px;
+    padding-bottom: 50px;
+}
+.footer1{
+    
+}
+.footer2{
+    margin-top: -25px;
+}
+.footer3{
+    margin-top: -45px;
+}
+.footer4{
+    margin-top: -45px;
+}
+}
+
+@media screen and (max-width: 768px){
+    .hero-container{
+        background-image: url('../images/shapes.png');
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 12px 140px;
+    }
+    .left-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .what-we-serve{
+        margin: 0 50px;
+        text-align: center;
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    /* review section */
+
+    .customer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 150px;
+        overflow-x: hidden;
+    }
+    .review-main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .review-area-container{
+        background-color: #f1f1f1;
+        padding: 40px 30px;
+        border-radius: 15px;
+        width: 200px;
+    }
+    .customer-container{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        overflow-x: hidden;
+        margin-bottom: 100px;
+    }
+
+    /* footer section */
+    .background-image{
+        background-image: url('../images/bg-image.png');
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        padding: 100px 140px;
+        padding-bottom: 50px;
+    }
+
+    .footer2{
+        margin-top: -70px;
+    }
+}
+@media screen and (max-width: 400px){
+
 }
