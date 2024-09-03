@@ -43,7 +43,7 @@ nav ul {
 /* hero styles  */
 
 .hero-container{
-    background-image: url('./images/shapes.png');
+    background-image: url('../images/shapes.png');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ nav ul {
 /* footer */
 
 .background-image{
-    background-image: url('./images/bg-image.png');
+    background-image: url('../images/bg-image.png');
     height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
